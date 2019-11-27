@@ -8,7 +8,7 @@
 
 # First CSS Stylesheets
 
-## Inline Styles
+### Inline Styles
 	
 	You may use inline styles with just about any HTML element.
 
@@ -16,15 +16,15 @@
 
 	The one exception for usage of inline styles is in the production of HTML5 emails. When producing HTML5 emails, you almost always have to use inline styles.
 
-## Styles in the document head
+### Styles in the document head
 
-## Attaching an external stylesheet with link
+### Attaching an external stylesheet with link
 	
 Note that the style tags are not used in an external document
 	
 # Styling Text
 
-## Color
+### Color
 	
 1. Named Colors
 	
@@ -40,19 +40,19 @@ Note that the style tags are not used in an external document
 
 	 Instead of representing these values with the numbers 0-255, the hexadecimal number system is used with a range from 0-FF.
 
-## Text Alignment
+### Text Alignment
 	
 left, center, right, and justify
 	
-## Text Transform
+### Text Transform
 
 capitalize, uppercase, and lowercase
 
-## Text Decoration
+### Text Decoration
 
 underline and overline
 
-## Spacing Text
+### Spacing Text
 
 1. text-indent
 
@@ -62,13 +62,13 @@ underline and overline
 
 4. word-spacing (don't adjust it)
 
-## Text Shadow
+### Text Shadow
 
 1. The text-shadow rule allows you to place a drop shadow effect behind the text
 
 2. The text-shadow rule has three components. The first is the horizontal offset of the shadow. The second component is the vertical offset of the shadow, and the third is the color of the shadow expressed as a named, RGB or hex color. 
 
-## Working with Fonts
+### Working with Fonts
 
 1. font-family
 
@@ -86,11 +86,11 @@ underline and overline
 	
 # selector
 
-## Tag Selectors
+### Tag Selectors
 
 Tag selectors allow you to select element for styling by the tag name.
 	
-## ID Selector
+### ID Selector
 
 ID’s are intended to be used once and only once on a page. 
 
@@ -98,8 +98,7 @@ Traditionally ID’s have been used to provide unique identifiers for content bl
 
 Note the use of the hash sign preceding the attribute value
 
-
-## Class Selector
+### Class Selector
 
 Classes are intended to be deployed multiple times on a page.
 
@@ -107,12 +106,11 @@ Classes are a flexible way to select multiple content elements for formatting.
 
 Note the use of the period to indicate a class in the selector in the style sheet.
 
-
-## Multiple Selectors
+### Multiple Selectors
 
 	There are times when it’s strategic to select more than a single element at a single time.
 	
-## Decendant Selectors
+### Decendant Selectors
 
 As you’ve likely realized, HTML5 provides a hierarchical document skeleton. Elements that are inside other elements are said to be descendants.
 
@@ -124,8 +122,7 @@ div > h2 {
 }
 ```
  
- 
-## Attribute Selectors
+### Attribute Selectors
 
 Attribute selectors, as you might imagine, allow you to select an element based on the attribute that it contains. 
 	
@@ -140,7 +137,7 @@ Attribute selectors, as you might imagine, allow you to select an element based 
 }
 ```
 	
-## Pseudo-Selectors
+### Pseudo-Selectors
 
 ```
 p::first-line {    

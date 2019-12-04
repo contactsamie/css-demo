@@ -6,7 +6,8 @@
  3. [Selector](#selector)
  4. [Styling Forms and Buttons](#styling-forms-and-buttons)
  5. [Box Model](#box-model)
- 6. [Next](#next)
+ 6. [Positioning](#positioning)
+ 7. [Next](#next)
 
 # First CSS Stylesheets
 
@@ -360,6 +361,100 @@ Width 	Type
 ---------------------------------------------
 600 	Total width of the logical Division
 ```
+
+# Positioning
+
+### Static Positioning
+
+It is default value for the CSS.
+When you use static positioning, each element is lined up one on top of each other in the order in which they appear in the HTML.
+
+### Relative Positioning
+
+This will make its position relative to its normal position in the page element stack
+Please note: 
+	With Relative Positioning, the space that would have ordinarily occupied is still being held open. 
+	Other elements will not move to fill in the space created.
+
+Example:
+```
+.orange-box {    
+	height: 200px;    
+	width: 200px;    
+	background: orange;
+	
+    position: relative;    
+	top: 200px;    
+	left: 200px; 
+}
+```
+
+Then "top: 200px" will move the element down 200px from it’s static position. 
+
+### Absolute Positioning
+
+Absolute positioning allows you to select an exact position for the element within the browser window. 
+Unlike relative positioning, the element will be taken out of the element flow, and other elements will fill the empty space created.
+
+Example:
+```
+.orange-box {    
+	height: 200px;    
+	width: 200px;    
+	background: orange;
+	
+    position: absolute;    
+	bottom: 0px;    
+	right: 0px; 
+}
+```
+
+These rules will put the orange box in the lower right-hand corner of the browser window. 
+If we add a large amount of content, the orange box will overlay the content, no matter how much content we add.
+
+#### Absolute Positioning based on another element
+
+Absolute positioning adjusts the positioning based the closest positioned ancestor. 
+
+Example:
+```
+.purple-box {    
+	height: 20px;    
+	width: 20px;    
+	background: purple;    
+	position: absolute;    
+	left: 10px;    
+	top: 10px; 
+}
+
+<div class="orange-box">
+	<div class="purple-box"></div> 
+</div>    
+```
+
+### Fixed Positioning
+
+Fixed positioning is very much like absolute positioning with one crucial difference: Elements assigned fixed positioning will not scroll with the rest of the content on the page. 
+Like absolute positioning, the element will be removed from the flow, and the next element will take up its space.
+
+Example:
+```
+.orange-box {            
+	height: 200px;            
+	width: 200px;            
+	background: orange;    
+    
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}      
+```
+
+Then "bottom: 0px" - The element will be placed 0px away from the bottom edge. 
+
+Now if we scroll, you’ll notice that unlike the absolute positioned element, the fixed doesn’t scroll with the content. 
+Fixed positioning is often used when the design requires an item always be visible on the screen-Like a footer
+
 
 # next
 		

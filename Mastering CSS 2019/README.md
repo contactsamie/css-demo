@@ -1,4 +1,4 @@
-# Master CSS
+# Mastering CSS 2019
 
 ## Studying Note:
  1. [First CSS Stylesheets](#first-css-stylesheets)
@@ -7,7 +7,8 @@
  4. [Styling Forms and Buttons](#styling-forms-and-buttons)
  5. [Box Model](#box-model)
  6. [Positioning](#positioning)
- 7. [Next](#next)
+ 7. [Transitions and Animations](#transitions-and-animations)
+ 8. [Next](#next)
 
 # First CSS Stylesheets
 
@@ -455,6 +456,48 @@ Then "bottom: 0px" - The element will be placed 0px away from the bottom edge.
 Now if we scroll, you’ll notice that unlike the absolute positioned element, the fixed doesn’t scroll with the content. 
 Fixed positioning is often used when the design requires an item always be visible on the screen-Like a footer
 
+# Transitions and Animations
 
+## Transitions
+
+To create a transition effect, you must specify two things:
+
+	1. the CSS property you want to add an effect to
+	2. the duration of the effect
+
+Note: The transition effect will start when the specified CSS property changes value.
+
+### Properties
+
+transition-delay
+	
+	The transition-delay property specifies a delay (in seconds) for the transition effect.
+	
+transition-duration
+	
+	Specifies how many seconds or milliseconds a transition effect takes to complete
+
+## Transformation
+
+CSS transforms allow you to move, rotate, scale, and skew elements.
+
+## Methods
+
+translate 
+
+	The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+	
+scale 
+
+	The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).
+	
+rotate 
+
+	The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.
+	
+skew 
+
+	The skew() method skews an element along the X and Y-axis by the given angles.
+	
 # next
 		

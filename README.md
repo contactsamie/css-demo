@@ -6,8 +6,12 @@
  
 # Article
 
-##CSS "shine" effect
+## CSS "shine" effect
 
 http://jsfiddle.net/nqQc7/512/
+
+## How To Create a Flip Card
+
+https://www.w3schools.com/howto/howto_css_flip_card.asp
 
 # Next
